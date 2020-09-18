@@ -1,0 +1,12 @@
+> x
+[1]  0  2  4  6  8 10
+> x[3]            
+[1] 4
+> x[c(2, 4)]      
+[1] 2 6
+> x[-1]          # access all but 1st element
+[1]  2  4  6  8 10
+> x[c(2, -4)]    # cannot mix positive and negative integers
+Error in x[c(2, -4)] : only 0's may be mixed with negative subscripts
+> x[c(2.4, 3.54)]    # real numbers are truncated to integers
+[1] 2 4
